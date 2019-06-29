@@ -10,8 +10,13 @@ html{
 }
 body{
     width: inherit;
+    height: 100%;
     display: block;
     font-size: 16px;
+    background-image: url("../images/background.png");
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;s
 }
 /* h1 {
     display: block;
@@ -31,6 +36,7 @@ header{
     border-width: 100%;
     border-bottom-style: solid;
     border-bottom-width: 3px;
+    background-color: white;
     border-color: #cccccc;
 }
 .header{
@@ -111,11 +117,11 @@ input[type=submit]:hover{
 }
 .Middle{
     position: relative;
-    height: 100vh;
+    height: 100%;
     /* overflow: auto; */
     background-image: url("../images/background.png");
     background-position: center center;
-    background-size: cover;
+    background-size: 100%;
     background-attachment: fixed;
 }
 .Container{
@@ -191,3 +197,30 @@ footer {
     left: 45%;
     text-align: center;
 }
+
+/* @media only screen and (max-width: 980px){
+    .Container{
+        width: 540px;
+        margin-right: 0;
+        margin-left: 20px;
+        transform: none;
+    }
+    .line-divider{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 768px){
+    .Middle{
+        background-size: 50%;
+    }
+    .Container{
+        width: 748px;
+        margin-right: 0;
+        margin-left: 20px;
+        transform: none;
+    }
+    .line-divider{
+        width: 708px;
+    }
+}
+@media only screen and (max-width: 640px){} */
